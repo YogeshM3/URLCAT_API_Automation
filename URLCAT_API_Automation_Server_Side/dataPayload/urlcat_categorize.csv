@@ -1,0 +1,31 @@
+Sr No,payload
+1(Categorize_URL),"{
+  ""a"": ""1"",
+  ""aid"": ""707D09C3D72D43BCAFC93D56A14267CC"",
+  ""dn"": ""facebook.com"",
+  ""h"": ""n"",
+  ""l"": ""AVTEST"",
+  ""pkh"":""ef76eedf08d168aa0dc0a5662cdc4bbc"",
+  ""luid"": 0,
+  ""th"": 0,
+  ""u"": ""https://www.facebook.com"",
+  ""udi"":""66202edc2b45cd1a0653047828e203b2d9b6bdf81e4cdefa584efb71d705d0fa""
+}"
+2(Cache Refresh),"{""a"":""2"",""aid"": ""707D09C3D72D43BCAFC93D56A14267CC"",
+""pkh"":""ef76eedf08d168aa0dc0a5662cdc4bbc"",
+""clmt"":0.0,""l"":""AVTEST"",
+""qhCl"":[{""dlmt"":1442387331000.0,""id"":""e266324d4ee2bbc2b342f2ed81a3ee23"",
+""len"":28,""luid"":0,""ph"":""v""},{""dlmt"":1442387330000.0,""id"":""e31469c880238dc97fbcb6e24e237b3e"",
+""len"":23,""luid"":0,""ph"":""v"",""t"":""r""}],""udi"":""66202edc2b45cd1a0653047828e203b2d9b6bdf81e4cdefa584efb71d705d0fa"",""ru"":""amazon.com""}"
+3(Registration Request),"{""a"":""6"",""l"":""QH_EPS_76""}"
+4(Fetch Internal Parameters),"{""a"":""7"",""l"":""QH_EPS_76""}"
+5(Get Suffix list request),"{
+ ""a"": ""8"",
+ ""l"": ""AVTEST"",
+ ""aid"": ""4927C1A1FCA64BA29F0289503D7FFA0F"",
+ ""udi"": ""4c59be242a21542066e07c16ff58495b137f0e3a50b1adb019647841e59ced7c"",
+ ""dlmt"": ""1638259601773"",
+ ""pkh"": ""ef76eedf08d168aa0dc0a5662cdc4bbc""
+}"
+6(Hierarchy Request Update),"{""a"":""9"",""aid"":""4927C1A1FCA64BA29F0289503D7FFA0F"",""udi"":""4c59be242a21542066e07c16ff58495b137f0e3a50b1adb019647841e59ced7c"",""pkh"":""ef76eedf08d168aa0dc0a5662cdc4bbc"",""chlmt"":341254534,""l"":""AVTEST"",""qhHCl"":[{""d_n"":""google.com"",""dhlmt"":0,""lsdid"":0}]}"
+7,

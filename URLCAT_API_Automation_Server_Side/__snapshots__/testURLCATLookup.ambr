@@ -1,0 +1,951 @@
+# name: test_AID_UDI_PKH_Fields_With_NA
+  '''
+  {"rid":"84314f01e87cb656ba5f382d22d85134","rl":10,"rootDomainName":"tumblr.com","dhlmt":0,"h":2,"hlist":[],"dn":"totallylesbians.tumblr.com","id":"3b406b48bece5e902f0e7df641f9817a","l":26,"odn":"totallylesbians.tumblr.com","dlmt":1554870622000,"op":"A","luid":0,"rc":0,"urls":[{"u":"/","c":"22","uid":9531849,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_Empty_AID_Field
+  '''
+  {"rid":"66d8c6ec5c0fa18d146a1e12e578b966","rl":14,"rootDomainName":"indiatimes.com","dhlmt":0,"h":2,"hlist":[],"dn":"indiatimes.com","id":"66d8c6ec5c0fa18d146a1e12e578b966","l":14,"odn":"economictimes.indiatimes.com","dlmt":1540296890000,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"31","uid":2657,"uop":"M"},{"u":"/trending/","c":"52","uid":2597527,"uop":"D"}]}
+  
+  '''
+# ---
+# name: test_Empty_AID_UDI_PKH_Fields
+  '''
+  {"rid":"5784797979b30bc73cf2aa8de034edd9","rl":35,"rootDomainName":"whatthefuckshouldimakefordinner.com","dhlmt":0,"h":2,"hlist":[],"dn":"whatthefuckshouldimakefordinner.com","id":"5784797979b30bc73cf2aa8de034edd9","l":35,"odn":"whatthefuckshouldimakefordinner.com","dlmt":1643372240022,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"22","uid":678791,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_Empty_PKH_Field
+  '''
+  {"rid":"083037ed6a6ecde0891d5b05cb95fcff","rl":16,"rootDomainName":"fuckupnights.com","dhlmt":0,"h":2,"hlist":[],"dn":"fuckupnights.com","id":"083037ed6a6ecde0891d5b05cb95fcff","l":16,"odn":"fuckupnights.com","dlmt":1605447646304,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"4,38,17,6,77","uid":129848,"uop":"M"},{"u":"/privacy-policy","c":"34","uid":108520071,"uop":"A"},{"u":"/privacy-policy/","c":"34","uid":108519938,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_UDI_Field_With_Parental_Control_Domains
+  '''
+  {"rid":"84314f01e87cb656ba5f382d22d85134","rl":10,"rootDomainName":"tumblr.com","dhlmt":0,"h":2,"hlist":[],"dn":"totallylesbians.tumblr.com","id":"3b406b48bece5e902f0e7df641f9817a","l":26,"odn":"totallylesbians.tumblr.com","dlmt":1554870622000,"op":"A","luid":0,"rc":0,"urls":[{"u":"/","c":"22","uid":9531849,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_URL_Invalid_Cache_Refresh_Request_Data
+  dict({
+    'mesg': 'Invalid data received for Cache refresh request.',
+    'rc': 8,
+  })
+# ---
+# name: test_URL_Invalid_Hierarchy_Request_Data
+  dict({
+    'mesg': 'Invalid Hierarchy request data',
+    'rc': 35,
+  })
+# ---
+# name: test_URL_Referrer
+  dict({
+    'dhlmt': 1587653234000,
+    'dlmt': 1575559434000,
+    'dn': 'quickheal.com',
+    'h': 1,
+    'hlist': list([
+      dict({
+        'sdn': 'license4.quickheal.com',
+        'sid': '013d684271522770a16f68ced60e3e1d',
+        'sl': 22,
+        'sop': 'A',
+      }),
+      dict({
+        'sdn': 'dev.quickheal.com',
+        'sid': '31ab7cdf75e867ef832a9cbaa47d2b26',
+        'sl': 17,
+        'sop': 'D',
+      }),
+      dict({
+        'sdn': 'download.quickheal.com',
+        'sid': '41abf940f483631b3db866729376b07e',
+        'sl': 22,
+        'sop': 'M',
+      }),
+      dict({
+        'sdn': 'license94.quickheal.com',
+        'sid': '9956d2622754b51a949ded497565867f',
+        'sl': 23,
+        'sop': 'M',
+      }),
+      dict({
+        'sdn': 'esupport.quickheal.com',
+        'sid': 'a16020fa29414081a6f4278f24fe92f1',
+        'sl': 22,
+        'sop': 'A',
+      }),
+      dict({
+        'sdn': 'blogs.quickheal.com',
+        'sid': 'e58a27e932cca8827e88223e67b494bb',
+        'sl': 19,
+        'sop': 'D',
+      }),
+    ]),
+    'id': 'f92bfb8ff6ac7e99a799f6017797684b',
+    'l': 13,
+    'luid': 0,
+    'odn': 'quickheal.com',
+    'op': 'M',
+    'rc': 0,
+    'rid': 'f92bfb8ff6ac7e99a799f6017797684b',
+    'rl': 13,
+    'rootDomainName': 'quickheal.com',
+    'urls': list([
+      dict({
+        'c': '39',
+        'u': '/',
+        'uid': 4666,
+        'uop': 'M',
+      }),
+    ]),
+  })
+# ---
+# name: test_URL_Referrer_Cache_Refresh
+  dict({
+    'clist': list([
+      dict({
+        'dc': '-1',
+        'dlmt': 1442383234000,
+        'dn': 'blog.villa-danby-florida.com',
+        'id': 'e266324d4ee2bbc2b342f2ed81a3ee23',
+        'l': 28,
+        'luid': 0,
+        'op': 'A',
+        'rc': 0,
+        'urls': list([
+        ]),
+      }),
+      dict({
+        'dhlmt': 1442383234000,
+        'dlmt': 1481723170000,
+        'dn': 'villa-danby-florida.com',
+        'id': 'e31469c880238dc97fbcb6e24e237b3e',
+        'l': 23,
+        'luid': 0,
+        'op': 'M',
+        'rc': 0,
+        'urls': list([
+          dict({
+            'c': '68',
+            'u': '/',
+            'uid': 323606,
+            'uop': 'M',
+          }),
+        ]),
+      }),
+    ]),
+    'rc': 0,
+  })
+# ---
+# name: test_URL_Referrer_Hierarchy_Refresh
+  dict({
+    'hlist': list([
+      dict({
+        'dhlmt': 1692517490333,
+        'dn': 'haxbyq.com',
+        'id': 'ede9a1f234ce5aa40ae83e8205df0fea',
+        'l': 10,
+        'lsdid': 100,
+        'op': ' ',
+        'sdns': list([
+          dict({
+            'sdn': 'c8dyp.haxbyq.com',
+            'sid': '03be572dd32dc8df3b64c8582824fef7',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'lq46r.haxbyq.com',
+            'sid': '074c6d73d9df273689e4f88733c4fe5b',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '7ialm.haxbyq.com',
+            'sid': '07a11efee831230c8d75a80ddea08276',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'p76kt.haxbyq.com',
+            'sid': '10596a3a67874657230f9353d504449d',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'h9csd.haxbyq.com',
+            'sid': '12f8cce420e3ef9117ca4114d231bdb9',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'klf2m.haxbyq.com',
+            'sid': '137af1fb46db668b14ff300de3224077',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '76ihc.haxbyq.com',
+            'sid': '17e5f743f7eda35b34430e5a368f6f2b',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': '786qv.haxbyq.com',
+            'sid': '1b3f14ac64f8522e009f381cdf78f102',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'mzqs1.haxbyq.com',
+            'sid': '21f071ce5806572bd18f2faf70dd5d09',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'pga9l.haxbyq.com',
+            'sid': '248228e4c3cbefa672c65438441620c3',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '8kbr1.haxbyq.com',
+            'sid': '26dba1c4dd91085642399785d386585d',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '2vouj.haxbyq.com',
+            'sid': '2b18ff5b96bc6d587385fa0357ae2eed',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 't19m2.haxbyq.com',
+            'sid': '2edcdf3e0b5f2be127cf8cd9f24ff5dd',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'mkdia.haxbyq.com',
+            'sid': '3015e9c4d185814384278a57263e8969',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'eildb.haxbyq.com',
+            'sid': '35719d43c1b1cf66b03d4f65f8226ee4',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '51xov.haxbyq.com',
+            'sid': '36615b4b9b6bc3199eba01a109e5f44a',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'abd9z.haxbyq.com',
+            'sid': '38b89925efce1309f71ca9152e446a19',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'agh1m.haxbyq.com',
+            'sid': '392a20e70c12bcec5f0cd9f66138a9e3',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '4eut8.haxbyq.com',
+            'sid': '3b04dc3423075d81696cd60786a84220',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'v4z9l.haxbyq.com',
+            'sid': '3d2e725506f8ace51afe8baab7a1eaae',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'tslqg.haxbyq.com',
+            'sid': '3d5d50de8f2fdd18c4142f54c80eed99',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'hdcxv.haxbyq.com',
+            'sid': '405973ff5b9496ccd14e95f11164657f',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'c5kax.haxbyq.com',
+            'sid': '440528fcfe925569fb079312d8eaa8e7',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'g89hf.haxbyq.com',
+            'sid': '47484332f5976a9b4c4a99da9bc16169',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': '2ihpt.haxbyq.com',
+            'sid': '4924e2f1bf24ae5e09a26b36dc57afe7',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'njitv.haxbyq.com',
+            'sid': '4e982ddf75714a85c79dca1e006517d8',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '6aukf.haxbyq.com',
+            'sid': '4f8cc0392781f8078bfde84c144354df',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'qf23c.haxbyq.com',
+            'sid': '50dde20c671436ed6daed667b0b85305',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'slbz2.haxbyq.com',
+            'sid': '50f5ef90ea30b6ce793f9841c674aa83',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'bhs6a.haxbyq.com',
+            'sid': '54b6ee1cc8187a04123ba49022aafd98',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'c8pza.haxbyq.com',
+            'sid': '56f8d5bb3d2841fa385e9f3ab2c49d79',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'afs6b.haxbyq.com',
+            'sid': '5ac158f8332d7a662a4cec72de93b844',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '51ybq.haxbyq.com',
+            'sid': '5cc3efe046e9881d7876b86bbb9c325c',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'f4k2o.haxbyq.com',
+            'sid': '5e0017c38d277824d2f584b403570924',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': '35vna.haxbyq.com',
+            'sid': '5e4c4958fde475f635399c86b0b4061b',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'g72sf.haxbyq.com',
+            'sid': '602f0950a110d2f0d7b1c8dfb3f29286',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': '8k6gn.haxbyq.com',
+            'sid': '607872c496d75f0e766a68dfa96c0efd',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '62a3b.haxbyq.com',
+            'sid': '640e0cce1421be9049046f9ecf774742',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'hnoiq.haxbyq.com',
+            'sid': '6a7e1dd61217ae115c6ebeb79f8ad7f1',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'i9hnq.haxbyq.com',
+            'sid': '6ada7ab312295dd994d837ec1af7212e',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'skud5.haxbyq.com',
+            'sid': '6f8e1c1c4895e44c796099bc09c69b11',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'cbvio.haxbyq.com',
+            'sid': '7025dff5a0dd98c4b7c576915555122f',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 't1gil.haxbyq.com',
+            'sid': '704a05ced55f760aafc067a33b75236d',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '5goud.haxbyq.com',
+            'sid': '717845d7ada36bd712712c7239a14621',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'clemg.haxbyq.com',
+            'sid': '7577cf13b377fa82605a0765e2e33bab',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'kbhvz.haxbyq.com',
+            'sid': '775f89d793be4205f0c4ae4d7ca96545',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'yxhn8.haxbyq.com',
+            'sid': '7e3f8de390f5f91daba62ade0aa82445',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': '68ake.haxbyq.com',
+            'sid': '7e56bc21f31def76be4c82192bd382a1',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'v9ybo.haxbyq.com',
+            'sid': '8247ad491d36db7263564445450d2c3f',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'mu581.haxbyq.com',
+            'sid': '8369d6bdb8eda436f5b085cae84f387b',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'fib2m.haxbyq.com',
+            'sid': '84f83249b65fc1a3392d2c1ce4d4e02d',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'v17f4.haxbyq.com',
+            'sid': '867e7e81a11039ff7d0edb9eed367ac4',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': '37mn9.haxbyq.com',
+            'sid': '873617290377ec47bf8cb927cb02b2c6',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'uonb1.haxbyq.com',
+            'sid': '880b158157a3bcb5daa8526e45fe9d40',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'pkrls.haxbyq.com',
+            'sid': '88ee2635606629abef674716c4ed3626',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'b1g7n.haxbyq.com',
+            'sid': '9606548c5e6132c70d6dc94714365f3a',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'e9rd3.haxbyq.com',
+            'sid': '96440e07c549e50dead6183f442d47fc',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': '8qd1i.haxbyq.com',
+            'sid': '99c489c9d8d8aa6e10af612f69d56db7',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'j78l3.haxbyq.com',
+            'sid': '9b9f666263e1c9ccf281f280eb1fdc90',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '5lxcr.haxbyq.com',
+            'sid': '9dfbc5c22c2b04b603b2e82f9a9b6ea7',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': '9gyi8.haxbyq.com',
+            'sid': '9ea89ce3b99a45858f0ffe1cefee4850',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'qfobx.haxbyq.com',
+            'sid': '9edc5911c93d1bde22e163e53236f32d',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'mvpho.haxbyq.com',
+            'sid': '9fa92fe4596cf303a2dfe61ca92a8205',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'ldejy.haxbyq.com',
+            'sid': 'a52cc04372a85f650147074698d071b6',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '3hime.haxbyq.com',
+            'sid': 'ab3fd801cb56ac66cc1972f693b4862b',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'rbgko.haxbyq.com',
+            'sid': 'adbf9aed93aba30b25236cf1b26eabea',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'x2od6.haxbyq.com',
+            'sid': 'b30fe3099671d37fce9ae9125c6818b2',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'k4t8p.haxbyq.com',
+            'sid': 'b3807d6afb5e28d3349dafdd80259da0',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'hq4ji.haxbyq.com',
+            'sid': 'b59743b343e69fe381c801589ce80ff8',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'tviua.haxbyq.com',
+            'sid': 'b6fc01f9270ecd7cebae6d23d6a19597',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'idqsn.haxbyq.com',
+            'sid': 'b77198b43e5e27248b40083fc55fd635',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '72yrm.haxbyq.com',
+            'sid': 'b7cbd5f3b8515573202957b0b03998a9',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 's7eap.haxbyq.com',
+            'sid': 'bb8f25680fc6b75de30482fe6290ae86',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'lhcp6.haxbyq.com',
+            'sid': 'bbab75df79f682304716e715e5083130',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'e8r32.haxbyq.com',
+            'sid': 'bbbad7d636f601221c7856402380b5bc',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': '3gkjt.haxbyq.com',
+            'sid': 'bc21516be06cacbdd85843c12c1bc8a3',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 't91jg.haxbyq.com',
+            'sid': 'be3465bd53fbc2b4bcfaa177fb613157',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'y5l2n.haxbyq.com',
+            'sid': 'befb89217bfbe74dd3c09fbb2b571f4b',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'l4i92.haxbyq.com',
+            'sid': 'c17606d8e977587ca9f5f7b2f4d5ebd0',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'kytzl.haxbyq.com',
+            'sid': 'c37fa36fac526f6ae28b36cbcef6a044',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'mcibu.haxbyq.com',
+            'sid': 'ce63129a0a22751bbb1d4080d2991902',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '7t81s.haxbyq.com',
+            'sid': 'ce861592701eb8e3634522eacd89033e',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'pi459.haxbyq.com',
+            'sid': 'd5cf76d8f766064b15a1a696ac7481cf',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '3qids.haxbyq.com',
+            'sid': 'd60b132f0e211f11f10a8e63b184c3f1',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'yq8bd.haxbyq.com',
+            'sid': 'd83610e4707d3e6be3aeb1d32a97368d',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '83gfu.haxbyq.com',
+            'sid': 'd89094053cc0af2035972835fa2e3b89',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'o63lu.haxbyq.com',
+            'sid': 'dab5acab245ec6f8ca307159946674c7',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'cvs1t.haxbyq.com',
+            'sid': 'df26c3011032f1d9c608202720f95315',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'afzjl.haxbyq.com',
+            'sid': 'e140d8ca18440d24219c25f9ed697ad1',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'd9yf4.haxbyq.com',
+            'sid': 'e2d31a29c1d301d96bf21740fe8c3039',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'to34i.haxbyq.com',
+            'sid': 'e6016918f550208fecd116f7f225e398',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'jkdh7.haxbyq.com',
+            'sid': 'ea8e1d6985d2cdeae8d8dfb48949861e',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'kxetc.haxbyq.com',
+            'sid': 'ec4cba1ce44291539ca4c51aa0fbe39b',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '8xg3t.haxbyq.com',
+            'sid': 'ee8828651bf4c46ceb337e9118a9b736',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': '4fyjp.haxbyq.com',
+            'sid': 'f74745811fd69e252a541a75a123f19d',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': '6eql9.haxbyq.com',
+            'sid': 'f7a3e2f82b1ee93bb4e9654d2477ae04',
+            'sl': 16,
+            'sop': 'A',
+          }),
+          dict({
+            'sdn': 'hsire.haxbyq.com',
+            'sid': 'f91f4669edb4af12b53de84e88957d28',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'iznlm.haxbyq.com',
+            'sid': 'faa192cff45298b1fac63c76b0eb6714',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'ekt5c.haxbyq.com',
+            'sid': 'fe675ab17c264248bee795170cd1513e',
+            'sl': 16,
+            'sop': 'M',
+          }),
+          dict({
+            'sdn': 'ajh4s.haxbyq.com',
+            'sid': 'ff870661bdd7be8333c9334f99aa5e4a',
+            'sl': 16,
+            'sop': 'A',
+          }),
+        ]),
+      }),
+    ]),
+    'rc': 0,
+  })
+# ---
+# name: test_UrlCat_Request_With_Newly_Added_UDI
+  '''
+  {"rid":"8b5a6d74be73ee7ca3a040a0e7e81785","rl":27,"rootDomainName":"islamabadescortsservice.com","dhlmt":0,"h":2,"hlist":[],"dn":"islamabadescortsservice.com","id":"8b5a6d74be73ee7ca3a040a0e7e81785","l":27,"odn":"islamabadescortsservice.com","dlmt":1632209237920,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"22","uid":5209582,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_32_Key_PKH_AID_And_64_Key_UDI_Field
+  '''
+  {"rid":"79b95bb9dc499dc622fc753c1c2304ae","rl":32,"rootDomainName":"whatthefuckjusthappenedtoday.com","dhlmt":0,"h":2,"hlist":[],"dn":"whatthefuckjusthappenedtoday.com","id":"79b95bb9dc499dc622fc753c1c2304ae","l":32,"odn":"whatthefuckjusthappenedtoday.com","dlmt":1643372206790,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"23,31,22","uid":2133988,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_64_Key_AID_PKH_UDI_Fields
+  '''
+  {"rid":"d9ec2f174418fa30dc036dab942aa420","rl":16,"rootDomainName":"freefuckvids.com","dhlmt":0,"h":2,"hlist":[],"dn":"freefuckvids.com","id":"d9ec2f174418fa30dc036dab942aa420","l":16,"odn":"freefuckvids.com","dlmt":1599138604615,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"22","uid":2351,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_With_AID_Special_Character
+  '''
+  {"rc":9,"mesg":"Invalid request received."}
+  
+  '''
+# ---
+# name: test_With_AV_Domain_Name
+  '''
+  {"rid":"f92bfb8ff6ac7e99a799f6017797684b","rl":13,"rootDomainName":"quickheal.com","dhlmt":0,"h":2,"hlist":[],"dn":"quickheal.com","id":"f92bfb8ff6ac7e99a799f6017797684b","l":13,"odn":"qhconnect.quickheal.com","dlmt":1575559434000,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"39","uid":4666,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_Cloud_Domain
+  '''
+  {"rid":"a2a8283864386ca04a5694e8b58759e6","rl":10,"rootDomainName":"amazon.com","dhlmt":0,"h":2,"hlist":[],"dn":"aws.amazon.com","id":"117573fb9bbce23141f4560f5fa3496c","l":14,"odn":"signin.aws.amazon.com","dlmt":1501266986000,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"39","uid":72731,"uop":"M"},{"u":"/console/","c":"13","uid":72732,"uop":"A"},{"u":"/js/","c":"13","uid":72734,"uop":"A"},{"u":"/css/","c":"13","uid":72733,"uop":"A"},{"u":"/s3/","c":"77,39,40,58,38","uid":134008,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_With_Education_Domain_Name
+  '''
+  {"rid":"ba2b180468bf56f9e03570737539f822","rl":16,"rootDomainName":"bootstrapcdn.com","dhlmt":0,"h":2,"hlist":[],"dn":"bootstrapcdn.com","id":"ba2b180468bf56f9e03570737539f822","l":16,"odn":"bootstrapcdn.com","dlmt":1599540485591,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"62","uid":38868,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_With_Email_Domain_Name
+  '''
+  {"rid":"e0b635eaffed789107bb9230467a412a","rl":10,"rootDomainName":"office.com","dhlmt":0,"h":2,"hlist":[],"dn":"office.com","id":"e0b635eaffed789107bb9230467a412a","l":10,"odn":"outlook.office.com","dlmt":1579822032000,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"68","uid":4128,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_Equipment_Domain
+  '''
+  {"rid":"c7a591971bc92384c29a88677140d903","rl":18,"rootDomainName":"shoplightspeed.com","dhlmt":0,"h":2,"hlist":[],"dn":"shoplightspeed.com","id":"c7a591971bc92384c29a88677140d903","l":18,"odn":"big-dicks-hardware.shoplightspeed.com","dlmt":1598823157270,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"32","uid":2674552,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_With_Equipment_Domain_Name
+  '''
+  {"rid":"1250be0dd341932f255980ff5f913b8a","rl":15,"rootDomainName":"stihldealer.net","dhlmt":0,"h":2,"hlist":[],"dn":"stihldealer.net","id":"1250be0dd341932f255980ff5f913b8a","l":15,"odn":"dickspower.stihldealer.net","dlmt":1597673199148,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"68,5","uid":82180,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_With_Hardware_Domain_Name
+  '''
+  {"rid":"c7a591971bc92384c29a88677140d903","rl":18,"rootDomainName":"shoplightspeed.com","dhlmt":0,"h":2,"hlist":[],"dn":"shoplightspeed.com","id":"c7a591971bc92384c29a88677140d903","l":18,"odn":"big-dicks-hardware.shoplightspeed.com","dlmt":1598823157270,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"32","uid":2674552,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_With_Hirearchy_Update
+  '''
+  {"rid":"e0653c0c543d156ada099799268fc5a3","rl":12,"rootDomainName":"boob-eez.com","dhlmt":0,"h":2,"hlist":[],"dn":"boob-eez.com","id":"e0653c0c543d156ada099799268fc5a3","l":12,"odn":"boob-eez.com","dlmt":1623433398224,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"55","uid":1437046,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_Insurance_Domain_Name
+  '''
+  {"rid":"024a4ab498ab7d2a4e3ee72eca7b2bb4","rl":15,"rootDomainName":"benefitme.co.in","dhlmt":0,"h":2,"hlist":[],"dn":"benefitme.co.in","id":"024a4ab498ab7d2a4e3ee72eca7b2bb4","l":15,"odn":"benefitme.co.in","dlmt":1598523170589,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"32","uid":910990,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_Invalid_Domain_Name
+  '''
+  {"rid":"0b1f251418bf64f8632e943ab8e0b49a","rl":12,"rootDomainName":"dshdtdsh.com","dhlmt":0,"h":2,"hlist":[],"dn":"dshdtdsh.com","id":"0b1f251418bf64f8632e943ab8e0b49a","l":12,"odn":"dshdtdsh.com","dlmt":1596143592987,"op":"A","luid":0,"rc":0,"urls":[{"u":"/","c":"34","uid":0,"uop":""}]}
+  
+  '''
+# ---
+# name: test_With_Malware_Domain
+  '''
+  {"rid":"71d4848d976da6c169e13ce9fc484557","rl":12,"rootDomainName":"badporno.net","dhlmt":0,"h":2,"hlist":[],"dn":"badporno.net","id":"71d4848d976da6c169e13ce9fc484557","l":12,"odn":"hi.badporno.net","dlmt":1677533923022,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"22","uid":84782,"uop":"M"},{"u":"/search/yuo%20tube%20mube/4","c":"34","uid":170974069,"uop":"A"},{"u":"/search/yuotube.tv.com","c":"34","uid":171018292,"uop":"A"},{"u":"/search/yuo%20tube%20mube/3","c":"34","uid":170974272,"uop":"A"},{"u":"/search/yuo%20tube%20mube/6","c":"34","uid":171018288,"uop":"A"},{"u":"/search/yuo%20tube%20mube/7","c":"34","uid":170973990,"uop":"A"},{"u":"/search/yuotube%20xxx/2","c":"34","uid":171018289,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_With_Malware_Domain_Name
+  '''
+  {"rid":"5ab0cd7b56b1255fd36e610306eeabdd","rl":15,"rootDomainName":"sponsorport.com","dhlmt":0,"h":2,"hlist":[],"dn":"dickssportinggoods.sponsorport.com","id":"5bc3485bf572ec3ad9a9d283b2cc092e","l":34,"odn":"dickssportinggoods.sponsorport.com","dlmt":1442655322000,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"57,10","uid":564108,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_Newly_Added_Fields
+  '''
+  {"rid":"8b5a6d74be73ee7ca3a040a0e7e81785","rl":27,"rootDomainName":"islamabadescortsservice.com","dhlmt":0,"h":2,"hlist":[],"dn":"islamabadescortsservice.com","id":"8b5a6d74be73ee7ca3a040a0e7e81785","l":27,"odn":"islamabadescortsservice.com","dlmt":1632209237920,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"22","uid":5209582,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_News_Domain
+  '''
+  {"rid":"66d8c6ec5c0fa18d146a1e12e578b966","rl":14,"rootDomainName":"indiatimes.com","dhlmt":0,"h":2,"hlist":[],"dn":"indiatimes.com","id":"66d8c6ec5c0fa18d146a1e12e578b966","l":14,"odn":"economictimes.indiatimes.com","dlmt":1540296890000,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"31","uid":2657,"uop":"M"},{"u":"/trending/","c":"52","uid":2597527,"uop":"D"}]}
+  
+  '''
+# ---
+# name: test_With_Other_Parental_Control_Domain
+  '''
+  {"rid":"083037ed6a6ecde0891d5b05cb95fcff","rl":16,"rootDomainName":"fuckupnights.com","dhlmt":0,"h":2,"hlist":[],"dn":"fuckupnights.com","id":"083037ed6a6ecde0891d5b05cb95fcff","l":16,"odn":"fuckupnights.com","dlmt":1605447646304,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"4,38,17,6,77","uid":129848,"uop":"M"},{"u":"/privacy-policy","c":"34","uid":108520071,"uop":"A"},{"u":"/privacy-policy/","c":"34","uid":108519938,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_With_Outlook_Domain
+  '''
+  {"rid":"e0b635eaffed789107bb9230467a412a","rl":10,"rootDomainName":"office.com","dhlmt":0,"h":2,"hlist":[],"dn":"office.com","id":"e0b635eaffed789107bb9230467a412a","l":10,"odn":"outlook.office.com","dlmt":1579822032000,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"68","uid":4128,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_PKH_NA
+  '''
+  {"rid":"083037ed6a6ecde0891d5b05cb95fcff","rl":16,"rootDomainName":"fuckupnights.com","dhlmt":0,"h":2,"hlist":[],"dn":"fuckupnights.com","id":"083037ed6a6ecde0891d5b05cb95fcff","l":16,"odn":"fuckupnights.com","dlmt":1605447646304,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"4,38,17,6,77","uid":129848,"uop":"M"},{"u":"/privacy-policy","c":"34","uid":108520071,"uop":"A"},{"u":"/privacy-policy/","c":"34","uid":108519938,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_With_PKH_Special_Character
+  '''
+  {"rc":9,"mesg":"Invalid request received."}
+  
+  '''
+# ---
+# name: test_With_Parental_Control_Domain
+  '''
+  {"rid":"5784797979b30bc73cf2aa8de034edd9","rl":35,"rootDomainName":"whatthefuckshouldimakefordinner.com","dhlmt":0,"h":2,"hlist":[],"dn":"whatthefuckshouldimakefordinner.com","id":"5784797979b30bc73cf2aa8de034edd9","l":35,"odn":"whatthefuckshouldimakefordinner.com","dlmt":1643372240022,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"22","uid":678791,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_Parental_Control_Domain_Name
+  '''
+  {"rid":"cdc6c15e7cbc4b0060cf70f304a531ac","rl":23,"rootDomainName":"fuckingawesomestore.com","dhlmt":0,"h":2,"hlist":[],"dn":"fuckingawesomestore.com","id":"cdc6c15e7cbc4b0060cf70f304a531ac","l":23,"odn":"fuckingawesomestore.com","dlmt":1643186889559,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"55,13,22","uid":168237,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_Parental_Domain_Name
+  '''
+  {"rid":"609886c9ced09a834714252909d593d7","rl":24,"rootDomainName":"motherfuckingwebsite.com","dhlmt":0,"h":2,"hlist":[],"dn":"motherfuckingwebsite.com","id":"609886c9ced09a834714252909d593d7","l":24,"odn":"motherfuckingwebsite.com","dlmt":1643459762625,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"22,62,23","uid":153098,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_QUickheal_Domain_Name
+  '''
+  {"rid":"a9d2a0d898d2d8337a6d47fcd2e346fa","rl":13,"rootDomainName":"atlassian.net","dhlmt":0,"h":2,"hlist":[],"dn":"atlassian.net","id":"a9d2a0d898d2d8337a6d47fcd2e346fa","l":13,"odn":"quickheal.atlassian.net","dlmt":1426576784000,"op":"A","luid":0,"rc":0,"urls":[{"u":"/","c":"48","uid":72412,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_With_Search_Engine_google
+  '''
+  {"rid":"1d5920f4b44b27a802bd77c4f0536f5a","rl":10,"rootDomainName":"google.com","dhlmt":0,"h":2,"hlist":[],"dn":"google.com","id":"1d5920f4b44b27a802bd77c4f0536f5a","l":10,"odn":"google.com","dlmt":1566236474000,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"15","uid":3301,"uop":"M"},{"u":"/img/","c":"15,40","uid":35561,"uop":"A"},{"u":"/edu/","c":"57","uid":35554,"uop":"A"},{"u":"/checkout/risk/","c":"13","uid":35546,"uop":"A"},{"u":"/earth/","c":"62","uid":35553,"uop":"A"},{"u":"/ads/","c":"76","uid":35532,"uop":"A"},{"u":"/recaptcha/","c":"62","uid":35581,"uop":"A"},{"u":"/talk/","c":"62","uid":35585,"uop":"A"},{"u":"/base/","c":"13","uid":35540,"uop":"A"},{"u":"/jobs/","c":"37","uid":35563,"uop":"A"},{"u":"/photos/","c":"40","uid":35575,"uop":"A"},{"u":"/adplanner/","c":"76","uid":35531,"uop":"A"},{"u":"/imghp/","c":"62","uid":35562,"uop":"A"},{"u":"/youtube/","c":"8","uid":35589,"uop":"A"},{"u":"/maps/","c":"57","uid":35568,"uop":"A"},{"u":"/phone/","c":"62","uid":35574,"uop":"A"},{"u":"/students/","c":"37","uid":35583,"uop":"A"},{"u":"/mail/","c":"1","uid":35567,"uop":"A"},{"u":"/alerts/","c":"31","uid":35535,"uop":"A"},{"u":"/adsense/","c":"76","uid":35533,"uop":"A"},{"u":"/profiles/","c":"12,15","uid":35580,"uop":"A"},{"u":"/pacman/","c":"50","uid":67156,"uop":"A"},{"u":"/local/","c":"57","uid":35566,"uop":"A"},{"u":"/apis/","c":"62","uid":35538,"uop":"A"},{"u":"/labs/popgadget/world/","c":"62","uid":35564,"uop":"A"},{"u":"/calendar/","c":"62","uid":35544,"uop":"A"},{"u":"/corporate/","c":"62","uid":35549,"uop":"A"},{"u":"/postini/","c":"39","uid":35578,"uop":"A"},{"u":"/chat/","c":"62","uid":35545,"uop":"A"},{"u":"/translate/","c":"6","uid":35587,"uop":"A"},{"u":"/places/","c":"68","uid":35577,"uop":"A"},{"u":"/bookmarks/","c":"62","uid":35541,"uop":"A"},{"u":"/sky/","c":"57","uid":67158,"uop":"A"},{"u":"/buzz/","c":"62","uid":35543,"uop":"A"},{"u":"/doubleclick/","c":"62","uid":35552,"uop":"A"},{"u":"/language_tools/","c":"6","uid":35565,"uop":"A"},{"u":"/docs/","c":"62","uid":35551,"uop":"A"},{"u":"/apps/","c":"62","uid":35539,"uop":"A"},{"u":"/mobile/","c":"62","uid":35570,"uop":"A"},{"u":"/news/","c":"31","uid":35572,"uop":"A"},{"u":"/moon/","c":"57","uid":67155,"uop":"A"},{"u":"/reviews/","c":"56","uid":35582,"uop":"A"},{"u":"/local/add/","c":"57","uid":35590,"uop":"A"},{"u":"/chrome/","c":"62","uid":35547,"uop":"A"},{"u":"/finance/","c":"15,53","uid":35556,"uop":"A"},{"u":"/picasa/","c":"62","uid":35576,"uop":"A"},{"u":"/gmail/","c":"1","uid":35558,"uop":"A"},{"u":"/movies/","c":"56,15","uid":35571,"uop":"A"},{"u":"/shoppin/","c":"13","uid":67157,"uop":"A"},{"u":"/books/","c":"31,35,68","uid":35542,"uop":"A"},{"u":"/adwords/","c":"76","uid":35534,"uop":"A"},{"u":"/api/","c":"62","uid":35537,"uop":"A"},{"u":"/support/","c":"62","uid":35584,"uop":"A"},{"u":"/technology/","c":"62","uid":35586,"uop":"A"},{"u":"/webhp","c":"57","uid":67159,"uop":"A"},{"u":"/products/","c":"13","uid":35579,"uop":"A"},{"u":"/friendconnect/","c":"12","uid":35557,"uop":"A"},{"u":"/tv/","c":"62","uid":35588,"uop":"A"},{"u":"/a/","c":"62","uid":35530,"uop":"A"},{"u":"/analytics/","c":"68","uid":35536,"uop":"A"},{"u":"/educators/","c":"57","uid":35555,"uop":"A"},{"u":"/landing/cop15/","c":"57","uid":67154,"uop":"A"},{"u":"/codesearch/","c":"62","uid":35548,"uop":"A"},{"u":"/notebook/","c":"62","uid":35573,"uop":"A"},{"u":"/desktop/updatecheck/","c":"62","uid":35550,"uop":"A"},{"u":"/images/","c":"40","uid":35560,"uop":"A"},{"u":"/merchants/","c":"13","uid":35569,"uop":"A"},{"u":"/grants/","c":"76","uid":35559,"uop":"A"},{"u":"/crisisresponse/","c":"57","uid":67153,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_With_Search_Engine_yahoo
+  '''
+  {"rid":"50cd1a9a183758039b0841aa738c3f0b","rl":9,"rootDomainName":"yahoo.com","dhlmt":0,"h":2,"hlist":[],"dn":"yahoo.com","id":"50cd1a9a183758039b0841aa738c3f0b","l":9,"odn":"yahoo.com","dlmt":1426776114000,"op":"A","luid":0,"rc":0,"urls":[{"u":"/","c":"15","uid":15075,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_Sport_ESPN
+  '''
+  {"rid":"6d233db5c720d21e9b540e6fb2d76512","rl":7,"rootDomainName":"espn.in","dhlmt":0,"h":2,"hlist":[],"dn":"espn.in","id":"6d233db5c720d21e9b540e6fb2d76512","l":7,"odn":"espn.in","dlmt":1578976208000,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"10","uid":955299,"uop":"M"}]}
+  
+  '''
+# ---
+# name: test_With_UDI_NA
+  '''
+  {"rid":"1250be0dd341932f255980ff5f913b8a","rl":15,"rootDomainName":"stihldealer.net","dhlmt":0,"h":2,"hlist":[],"dn":"stihldealer.net","id":"1250be0dd341932f255980ff5f913b8a","l":15,"odn":"dickspower.stihldealer.net","dlmt":1597673199148,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"68,5","uid":82180,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_With_Valid_AID_UDI_PKH_Fields
+  '''
+  {"rid":"bd5bccf8d526b81fb0d8870e53dd6a9c","rl":15,"rootDomainName":"squarespace.com","dhlmt":0,"h":2,"hlist":[],"dn":"squarespace.com","id":"bd5bccf8d526b81fb0d8870e53dd6a9c","l":15,"odn":"assets.squarespace.com","dlmt":1426577503000,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"62","uid":7298,"uop":"A"},{"u":"/favicon.ico","c":"15","uid":73840,"uop":"A"},{"u":"/display/ShowHelp/","c":"15","uid":73839,"uop":"A"}]}
+  
+  '''
+# ---
+# name: test_Without_PKH_UDI_AID_Fields
+  '''
+  {"rid":"1250be0dd341932f255980ff5f913b8a","rl":15,"rootDomainName":"stihldealer.net","dhlmt":0,"h":2,"hlist":[],"dn":"stihldealer.net","id":"1250be0dd341932f255980ff5f913b8a","l":15,"odn":"dickspower.stihldealer.net","dlmt":1597673199148,"op":"M","luid":0,"rc":0,"urls":[{"u":"/","c":"68,5","uid":82180,"uop":"A"}]}
+  
+  '''
+# ---
